@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>The Space Labs</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+      <!--Main Navigation-->
+  <header>
+    <style>
+   
+      /* Carousel styling */
+      #introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
+
+      .carousel-item:nth-child(1) {
+        background-image: url('img/im1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(2) {
+        background-image: url('img/im2.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(3) {
+        background-image: url('img/im3.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #introCarousel {
+          margin-top: -58.59px;
+        }
+      }
+
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" target="_blank" href="https://thespacelabs.com/docs/standard/">
+          <!-- <strong>MDB</strong> -->
+          <img src="img/logo.png" height="30px"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#intro">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" rel="nofollow"
+                target="_blank">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" target="_blank">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav list-inline">
+            <!-- Icons -->
+            <li class="">
+              <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
+                target="_blank">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li class="">
+              <a class="nav-link" href="https://www.facebook.com/thespacelabs" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://twitter.com/thespacelabs" rel="nofollow" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/thespacelabs/mdb-ui-kit" rel="nofollow" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Carousel wrapper -->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
+      </ol>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h1 class="mb-3">Your caption 1 </h1>
+                <h5 class="mb-4">Caption 2</h5>
+                <a class="btn btn-outline-light btn-lg m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A"
+                  role="button" rel="nofollow" target="_blank">Start tutorial</a>
+                <a class="btn btn-outline-light btn-lg m-2" href="https://thespacelabs.com/docs/standard/"
+                  target="_blank" role="button">Download MDB UI KIT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h2>You can place here any content</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="mask" style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(29, 236, 197, 0.7),
+                  rgba(91, 14, 214, 0.7) 100%
+                );
+              ">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h2>And cover it with any mask</h2>
+                <a class="btn btn-outline-light btn-lg m-2"
+                  href="https://thespacelabs.com/docs/standard/content-styles/masks/" target="_blank" role="button">Learn
+                  about masks</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Carousel wrapper -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section>
+        <div class="row">
+         
+
+          <div class="col-md-6 gx-5 mb-4">
+            <h4><span class="sub1">Software based</span><br/>
+              <span class="sub2">Simulation</span>
+            </h4>
+            <p class="text-muted">
+              Software based simulation plays a major role in the aerospace industry like finalising the configuration, design missions, validation of NGC (Navigation, Guidance and Control) algorithms, validation of hardware compatibility, range safety, etc.  Simulation provides the cost effective and time efficient integrated testing of hardware and algorithms.  In addition, simulations provide a platform to understand individual subsystems and its interfaces. 
+            </p>  
+          </div>
+
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay ripple " data-mdb-ripple-color="light">
+              <img src="img/c2.png" class="img-fluid" />
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+    
+
+    </div>
+
+
+    <div class="container-fluid bgx2">
+     
+      <div class="container">
+      <!--Section: Content-->
+      <section class="text-center ">
+        <h4 class="mb-5 padt50"><strong>Products</strong></h4>
+        <p>For a sector where perfection and precision are the primary needs, Spacelabs Products are designed with cutting edge technology. Simple design, user friendly features and quality outputs. This makes our products distinct and unique in the market. Precision and Perfection are taken care in every stage of the product evolution stage. Our products cater to Launch Vehicles, Satellites, Missiles, UAV and Aircrafts.
+          The Space Labs is committed to provide an ERP based solution for data handling from initiation of mission to launch and post flight analysis for launch vehicles/satellites.
+          </p>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+             
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+
+                    <div class="col-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="69.513" height="69.513" viewBox="0 0 69.513 69.513">
+                        <path id="Icon_metro-rocket" data-name="Icon metro-rocket" d="M50.361,6.273,28.638,28H15.6L2.571,45.374s13.809-3.846,21.863-2.042L2.571,71.441l28.64-22.276c3.994,9.141-2.573,22.276-2.573,22.276L46.016,58.407V45.374L67.739,23.651,72.084,1.928,50.361,6.273Z" transform="translate(-2.571 -1.928)" fill="#ff8383"/>
+                      </svg>
+                      
+                    </div>
+                    <div class="col-8">
+                      <div class="text-start prod_title1">ASTRA</div>
+                      <div class="text-start">AeroSpace  <br/>TRAjectory 
+                        optimizer</div>
+                        <div class="text-start">
+                      <a href="#"  class="more">Read more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+             
+              
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+
+                    <div class="col-4">
+                      <svg id="Icon_awesome-wind" data-name="Icon awesome-wind" xmlns="http://www.w3.org/2000/svg" width="74.019" height="64.756" viewBox="0 0 74.019 64.756">
+                        <path id="Icon_awesome-wind-2" data-name="Icon awesome-wind" d="M22.653,34.629H2.313A2.32,2.32,0,0,0,0,36.942v4.626a2.32,2.32,0,0,0,2.313,2.313H22.87A4.829,4.829,0,0,1,27.7,47.726a4.633,4.633,0,0,1-8.963,2.241,2.284,2.284,0,0,0-2.2-1.46H11.8a2.3,2.3,0,0,0-2.3,2.66,13.879,13.879,0,0,0,27.38-4.481C36,39.689,29.693,34.629,22.653,34.629ZM2.313,30H50.886A13.881,13.881,0,1,0,37.268,13.48a2.279,2.279,0,0,0,2.284,2.645h4.742a2.27,2.27,0,0,0,2.2-1.46,4.633,4.633,0,0,1,8.963,2.241,4.817,4.817,0,0,1-4.828,3.845H2.313A2.32,2.32,0,0,0,0,23.064V27.69A2.32,2.32,0,0,0,2.313,30Zm55.512,4.626H35.23a18.273,18.273,0,0,1,5.754,9.252H57.825a6.939,6.939,0,1,1-6.014,10.351,2.393,2.393,0,0,0-2.1-1.1H44.829a2.316,2.316,0,0,0-2.212,3.05A16.172,16.172,0,1,0,57.825,34.629Z" transform="translate(0 -2.253)" fill="#147cd5"/>
+                      </svg>
+                      
+                      
+                    </div>
+                    <div class="col-8">
+                      <div class="text-start prod_title2">SARAS6</div>
+                      <div class="text-start">Aerospace <br/>
+                        Simulator  -6 DOF</div>
+                        <div class="text-start">
+                      <a href="#"  class="more">Read more  <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+             
+              <div class="card-body">
+                <div class="container">
+                  <div class="row">
+
+                    <div class="col-4">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="74.142" height="74.142" viewBox="0 0 74.142 74.142">
+                        <g id="Icon_ionic-md-speedometer" data-name="Icon ionic-md-speedometer" transform="translate(-3.375 -3.375)">
+                          <path id="Path_106" data-name="Path 106" d="M9,29.25H54.626V37.8H9Z" transform="translate(8.633 39.712)" fill="#3727f5"/>
+                          <path id="Path_107" data-name="Path 107" d="M26.579,32.282A5.7,5.7,0,1,0,25.011,21.09L13.123,12.41l-.713.624,8.715,11.888a5.563,5.563,0,0,0-.25,1.657A5.7,5.7,0,0,0,26.579,32.282Z" transform="translate(13.867 13.867)" fill="#3727f5"/>
+                          <path id="Path_108" data-name="Path 108" d="M40.446,3.375A37.062,37.062,0,0,0,11.235,63.259h10.48l.713-.713,3.939-3.939-4.081-4.081-3.939,3.921A28.408,28.408,0,0,1,12.072,43.3h5.561v-5.7H12.072a28.408,28.408,0,0,1,6.274-15.149l3.939,3.921,4.081-4.081-3.921-3.939a28.408,28.408,0,0,1,15.149-6.274v5.561h5.7V12.072a28.408,28.408,0,0,1,15.149,6.274l-3.921,3.939,4.081,4.081,3.939-3.921a28.408,28.408,0,0,1,6.274,15.149H63.259v5.7h5.561a28.408,28.408,0,0,1-6.274,15.149l-3.939-3.921-4.081,4.081,3.939,3.939.713.713h10.48A37.062,37.062,0,0,0,40.446,3.375Z" fill="#3727f5"/>
+                        </g>
+                      </svg>
+                      
+                      
+                    </div>
+                    <div class="col-8">
+                      <div class="text-start prod_title3">SARAS6-RT</div>
+                      <div class="text-start">Aerospace  <br/>
+                        Simulator -6 DOF Real-Time</div>
+                        <div class="text-start">
+                      <a href="#" class="more">Read more  <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+      </div>
+    </div>
+
+
+    <div class="container-fluid bgx3">
+     
+      <div class="container">
+      <!--Section: Content-->
+      <section class="text-center ">
+        <h4 class="padt100 white"><strong>Services</strong></h4>
+        <!-- <p>For a sector where perfection and precision are the primary needs, Spacelabs Products are designed with cutting edge technology. Simple design, user friendly features and quality outputs. This makes our products distinct and unique in the market. Precision and Perfection are taken care in every stage of the product evolution stage. Our products cater to Launch Vehicles, Satellites, Missiles, UAV and Aircrafts.
+          The Space Labs is committed to provide an ERP based solution for data handling from initiation of mission to launch and post flight analysis for launch vehicles/satellites.
+          </p> -->
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card s1">
+             
+              <div class="card-body text-start">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic1" viewBox="0 0 78.973 94.64">
+                  <g id="Component_3_1" data-name="Component 3 – 1" transform="translate(3.506 3.51)">
+                    <path id="Icon_material-lightbulb-outline" data-name="Icon material-lightbulb-outline" d="M12.8,28.18a1.329,1.329,0,0,0,1.325,1.325h5.3a1.329,1.329,0,0,0,1.325-1.325V26.855H12.8ZM16.777,3a9.273,9.273,0,0,0-5.3,16.884v3A1.329,1.329,0,0,0,12.8,24.2h7.952a1.329,1.329,0,0,0,1.325-1.325v-3A9.273,9.273,0,0,0,16.777,3Zm3.777,14.71-1.126.8v3.048h-5.3V18.506L13,17.71a6.626,6.626,0,1,1,7.554,0Z" transform="translate(9.312 16)" fill="#fff"/>
+                    <path id="Path_154" data-name="Path 154" d="M-1096.431,2360.788s-27.723-40.192,13.454-53.141,41.988,39.358,41.988,39.358l6.161,13.783-8.924,3.211-7.408,18.985-16.7-4.635v14.867h-26.316V2366.15Z" transform="translate(1105.56 -2305.586)" fill="none" stroke="#fff" stroke-width="7"/>
+                  </g>
+                </svg>
+                <br/>
+                <br/>
+              
+                <h2 class="text-start">Consultancy <br/>Services</h2>
+                <br/>
+          
+              
+                
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card s2">
+             
+              <div class="card-body text-start">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic1" viewBox="0 0 63.27 77.088">
+                  <g id="Icon_feather-flag" data-name="Icon feather-flag" transform="translate(-2 1)">
+                    <path id="Path_152" data-name="Path 152" d="M6,47.907s3.454-3.454,13.818-3.454,17.272,6.909,27.635,6.909S61.27,47.907,61.27,47.907V6.454S57.816,9.909,47.453,9.909,30.181,3,19.818,3,6,6.454,6,6.454Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+                    <path id="Path_153" data-name="Path 153" d="M6,46.681V22.5" transform="translate(0 25.407)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+                  </g>
+                </svg>
+                
+                <br/>
+                <br/>
+              
+                <h2 class="text-start">Mission 
+                    <br/>Design</h2>
+                <br/>
+          
+              
+                
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card s3">
+             
+              <div class="card-body text-start">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic1" viewBox="0 0 125 109">
+                  <text id="_" data-name="&lt;/&gt;" transform="translate(0 86)" fill="#fff" font-size="80" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="0" y="0">&lt;/&gt;</tspan></text>
+                </svg>
+                
+                <br/>
+                <br/>
+              
+                <h2 class="text-start">Algorithm 
+                   <br/>Development</h2>
+                <br/>
+          
+              
+                
+              </div>
+
+
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card s4">
+             
+              <div class="card-body text-start">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+                  <g id="Group_258" data-name="Group 258" transform="translate(-49 -46)">
+                    <g id="Ellipse_28" data-name="Ellipse 28" transform="translate(49 46)" fill="none" stroke="#fff" stroke-width="5">
+                      <circle cx="35" cy="35" r="35" stroke="none"/>
+                      <circle cx="35" cy="35" r="32.5" fill="none"/>
+                    </g>
+                    <g id="Group_257" data-name="Group 257" transform="translate(1 -0.193)">
+                      <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M19.112,28.995,36.371,11.749a3.26,3.26,0,0,0-4.617-4.6L12.2,26.686a3.253,3.253,0,0,0-.1,4.495L31.74,50.857a3.26,3.26,0,0,0,4.617-4.6Z" transform="translate(58.75 51.999)" fill="#fff"/>
+                      <path id="Icon_ionic-ios-arrow-back-2" data-name="Icon ionic-ios-arrow-back" d="M29.467,28.995,12.208,11.749a3.26,3.26,0,0,1,4.617-4.6l19.554,19.54a3.253,3.253,0,0,1,.1,4.495L16.838,50.857a3.26,3.26,0,0,1-4.617-4.6Z" transform="translate(58.75 51.999)" fill="#fff"/>
+                    </g>
+                  </g>
+                </svg>
+                
+                
+                
+                
+                <br/>
+                <br/>
+              
+                <h2 class="text-start">Algorithm 
+                   <br/>Validation</h2>
+                <br/>
+          
+              
+                
+              </div>
+
+
+            </div>
+          </div>
+
+        
+        </div>
+      </section>
+      <!--Section: Content-->
+      </div>
+    </div>
+
+  </main>
+  <!--Main layout-->
+
+  <main class="contactbg">
+    <div class="container">
+      <!--Section: Content-->
+          <section class="padt100">
+            
+           <div class="row ">
+           
+            <div class="col-md-6">
+              <h4 ><strong>Contact Us</strong></h4>
+              THESPACELABS<br/>
+            Smarana, TC 3/2105, <br/>
+            Arasummoodu, Kulathur, <br/>
+            Trivandrum, India. <br/>
+
+
+
+              </div>
+
+              <div class="col-md-6">
+                <h4 ><strong>Connect with Us</strong></h4>
+                Mobile: 9876789
+              </div>
+
+           
+          </div>
+          </section>
+     </div>
+  </main>
+  
+
+  
+
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+  
+
+    <hr class="m-0" />
+
+    <div class="text-center py-4 align-items-center">
+      <p>Follow us on social media</p>
+      <a href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" class=" m-1" role="button"
+        rel="nofollow" target="_blank">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.facebook.com/" class=" m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com/" class="m-1" role="button" rel="nofollow"
+        target="_blank">
+        <i class="fab fa-twitter"></i>
+      </a>
+      
+    </div> 
+
+    <!-- Copyright -->
+    <div class="ftbg" >
+      <div class="container">
+        <div class="col-md-6 white smallfont">
+
+          <br/>
+          <br/>
+        © 2021 Copyright The SpaceLabs
+      </div>
+
+      <div class="col-md-6">
+
+      </div>
+    
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
