@@ -168,7 +168,12 @@ body{
 
 
     .s1,.s2,.s3,.s4{margin-top: 10px !important;}
+
+    .p1,.p2,.p3,.p4{margin-top: 10px !important;}
 }
 
 /* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {   .s1,.s2,.s3,.s4{margin-top: 10px !important;}}
+@media (max-width: 767.98px) {   
+    .s1,.s2,.s3,.s4{margin-top: 10px !important;} 
+.p1,.p2,.p3,.p4{margin-top: 10px !important;}
+}
