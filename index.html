@@ -1,557 +1,573 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>The Space Labs</title>
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-    <!-- Google Fonts Roboto -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
-    <!-- MDB -->
-    <link rel="stylesheet" href="css/mdb.min.css" />
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-      <!--Main Navigation-->
-  <header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title></title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/heroes/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
-   
-      /* Carousel styling */
-      #introCarousel,
-      .carousel-inner,
-      .carousel-item,
-      .carousel-item.active {
-        height: 100vh;
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
       }
 
-      .carousel-item:nth-child(1) {
-        background-image: url('img/im1.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
-
-      .carousel-item:nth-child(2) {
-        background-image: url('img/im2.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
-
-      .carousel-item:nth-child(3) {
-        background-image: url('img/im3.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-      }
-
-      /* Height for devices larger than 576px */
-      @media (min-width: 992px) {
-        #introCarousel {
-          margin-top: -58.59px;
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
         }
       }
 
-      .navbar .nav-link {
-        color: #fff !important;
+      .forms
+      {
+        background: #ebfcfb;
+        height: 50px !important;
+        font-size: 22px !important;
       }
+
+
+
+
+
+
+.grad1
+{
+
+  background: linear-gradient(to right, #35b8b8 0%, #691ac9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bgx
+{
+  background: #212121;
+}
+
+.blue
+{
+  color: #067ada;
+}
+
+      
     </style>
 
-    <!-- Navbar navbar-dark d-none d-lg-block-->
-    <nav class="navbar navbar-expand-lg smallscreenhead " style="z-index: 2000;">
-      <div class="container-fluid">
-        <!-- Navbar brand -->
-        <a class="navbar-brand nav-link" target="_blank" href="https://thespacelabs.com/docs/standard/">
-          <!-- <strong>MDB</strong> -->
-          <img src="img/logo.png" height="30px"/>
-        </a>
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
-          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarExample01">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="#intro">Home</a>
-            </li>
+    
+    <!-- Custom styles for this template -->
+    <link href="heroes.css" rel="stylesheet">
 
-            <li class="nav-item">
-              <a class="nav-link" href="#" rel="nofollow"
-                target="_blank">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" target="_blank">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" target="_blank">Contact</a>
-            </li>
-          </ul>
+    <link href="assets/aos/aos.css" rel="stylesheet">  </head>
+  <body>
+    
+    <nav class="py-2 bg-light border-bottom fixed-top ">
+      <div class="container-fluid d-flex flex-wrap">
+        <ul class="nav me-auto">
+          <li class="nav-item"><a href="#" class="nav-link link-dark px-2 active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#product" class="nav-link link-dark px-2">Products</a></li>
+          <li class="nav-item"><a href="#service" class="nav-link link-dark px-2">Services</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link link-dark px-2">Contact</a></li>
+        
+        </ul>
+        <ul class="nav">
+         
+          <li class="nav-item"><a href="#" class="nav-link link-dark px-2">
+           
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg>
 
-          <ul class="navbar-nav list-inline">
-            <!-- Icons -->
-            <li class="">
-              <a class="nav-link" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
-                target="_blank">
-                <i class="fab fa-youtube"></i>
-              </a>
-            </li>
-            <li class="">
-              <a class="nav-link" href="https://www.facebook.com/thespacelabs" rel="nofollow" target="_blank">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://twitter.com/thespacelabs" rel="nofollow" target="_blank">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://github.com/thespacelabs/mdb-ui-kit" rel="nofollow" target="_blank">
-                <i class="fab fa-github"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+          </a></li>
+        </ul>
       </div>
     </nav>
-    <!-- Navbar -->
 
-    <!-- Carousel wrapper -->
-    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class="active"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1"></li>
-        <li data-mdb-target="#introCarousel" data-mdb-slide-to="2"></li>
-      </ol>
+    <header class="py-3rem mb-4 border-bottom-dyn pytop20">
+      <div class="container-fluid d-flex flex-wrap justify-content-center">
+        <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+          <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> -->
+          <img class="bi me-2" height="80" src="img/space.png"/>
+         
+        </a>
+      
+      </div>
+    </header>
+  
 
-      <!-- Inner -->
-      <div class="carousel-inner">
-        <!-- Single item -->
-        <div class="carousel-item active">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white text-center">
-                <h1 class="mb-3">Your caption 1 </h1>
-                <h5 class="mb-4">Caption 2</h5>
-                <a class="btn btn-outline-light btn-lg m-2" href="https://www.youtube.com/watch?v=c9B4TPnak1A"
-                  role="button" rel="nofollow" target="_blank">Start tutorial</a>
-                <a class="btn btn-outline-light btn-lg m-2" href="https://thespacelabs.com/docs/standard/"
-                  target="_blank" role="button">Download MDB UI KIT</a>
+
+  
+    <main  data-aos="fade-up">
+
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+             <img src="img/im1.png" width="100%" height="100%" />
+
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Example headline.</h1>
+                <p class="white">Some representative placeholder content for the first slide of the carousel.</p>
+              
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active carousel-item-start">
+            <img src="img/im2.png" width="100%" height="100%" /><div class="container">
+              <div class="carousel-caption">
+                <h1>Another example headline.</h1>
+                <p  class="white">Some representative placeholder content for the second slide of the carousel.</p>
+              
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item carousel-item-next carousel-item-start">
+           <img src="img/im3.png" width="100%" height="100%" />
+            <div class="container">
+              <div class="carousel-caption ">
+                <h1>One more for good measure.</h1>
+                <p  class="white">Some representative placeholder content for the third slide of this carousel.</p>
+                
               </div>
             </div>
           </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+    
+      
+    </main>
 
-        <!-- Single item -->
-        <div class="carousel-item">
-          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white text-center">
-                <h2>You can place here any content</h2>
-              </div>
-            </div>
+
+  
+
+
+    <main class=""  data-aos="fade-up">
+
+      <div class="container-fluid col-xxl-8 px-4 py-5removed">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="img/c2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
           </div>
-        </div>
-
-        <!-- Single item -->
-        <div class="carousel-item">
-          <div class="mask" style="
-                background: linear-gradient(
-                  45deg,
-                  rgba(29, 236, 197, 0.7),
-                  rgba(91, 14, 214, 0.7) 100%
-                );
-              ">
-            <div class="d-flex justify-content-center align-items-center h-100">
-              <div class="text-white text-center">
-                <h2>And cover it with any mask</h2>
-                <a class="btn btn-outline-light btn-lg m-2"
-                  href="https://thespacelabs.com/docs/standard/content-styles/masks/" target="_blank" role="button">Learn
-                  about masks</a>
-              </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Software based Simulation
+            </h1>
+            <p class="lead">
+            
+              Software based simulation plays a major role in the aerospace industry like finalising the configuration, design missions, validation of NGC (Navigation, Guidance and Control) algorithms, validation of hardware compatibility, range safety, etc. Simulation provides the cost effective and time efficient integrated testing of hardware and algorithms. In addition, simulations provide a platform to understand individual subsystems and its interfaces.
+    
+       
+            
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <!-- <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 btn01">View Details</button> -->
+              <a class="css-button-rounded skpx2 skpy2" href="#" title="View details">View Details</a>
+              <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> -->
             </div>
           </div>
         </div>
       </div>
-      <!-- Inner -->
+    
+    
+    
+    
+      <div class="b-example-divider-0"></div>
+    </main>
 
-      <!-- Controls -->
-      <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+<main  data-aos="fade-up" id="product">
+  
+
+
+  <div class="px-4 pt-5 my-s5 text-center border-bottoms">
+    <h1 class="display-4 fw-bold">Products</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+
+        For a sector where perfection and precision are the primary needs, Spacelabs Products are designed with cutting edge technology. Simple design, user friendly features and quality outputs. This makes our products distinct and unique in the market. Precision and Perfection are taken care in every stage of the product evolution stage. Our products cater to Launch Vehicles, Satellites, Missiles, UAV and Aircrafts. The Space Labs is committed to provide an ERP based solution for data handling from initiation of mission to launch and post flight analysis for launch vehicles/satellites.
+
+    
+
+      </p>
+     
     </div>
-    <!-- Carousel wrapper -->
-  </header>
-  <!--Main Navigation-->
 
-  <!--Main layout-->
-  <main class="mt-5">
+
+   
+  </div>
+
+ <!-- begin -->
+  
+ <div class="container-fluid bgx px-4 py-3" id="custom-cards"  data-aos="fade-up">
+     
+  
+  <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 ">
+    <div class="col" data-aos="flip-left"  data-aos-duration="3000">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h2 class="pt-1 mt-1 mb-1 display-7 lh-1 fw-bold">ASTRA</h2>
+          <p class="white">AeroSpace
+            TRAjectory optimizer</p>
+          <a class="css-button-rounded skpx2 skpy2 mb150" href="#" title="View details">View Details</a>
+          <ul class="d-flex list-unstyled mt-auto ">
+            <li class="me-auto">
+              <!-- <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="rounded-circle border border-white" viewBox="0 0 69.513 69.513">
+                <path id="Icon_metro-rocket" data-name="Icon metro-rocket" d="M50.361,6.273,28.638,28H15.6L2.571,45.374s13.809-3.846,21.863-2.042L2.571,71.441l28.64-22.276c3.994,9.141-2.573,22.276-2.573,22.276L46.016,58.407V45.374L67.739,23.651,72.084,1.928,50.361,6.273Z" transform="translate(-2.571 -1.928)" fill="#fff"></path>
+              </svg>
+
+
+            </li>
+            <!-- <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+              <small>Earth</small>
+            </li> -->
+            <!-- <li class="d-flex align-items-center">
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 69.513 69.513">
+                <path id="Icon_metro-rocket" data-name="Icon metro-rocket" d="M50.361,6.273,28.638,28H15.6L2.571,45.374s13.809-3.846,21.863-2.042L2.571,71.441l28.64-22.276c3.994,9.141-2.573,22.276-2.573,22.276L46.016,58.407V45.374L67.739,23.651,72.084,1.928,50.361,6.273Z" transform="translate(-2.571 -1.928)" fill="#fff"></path>
+              </svg>
+
+              <small>3d</small>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col" data-aos="flip-left"  data-aos-duration="2000">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+          <h2 class="pt-1 mt-1 mb-1 display-7 lh-1 fw-bold">SARAS6</h2>
+          <p class="white">Aerospace
+            Simulator -6 DOF</p>
+          <a class="css-button-rounded skpx2 skpy2 " href="#" title="View details">View Details</a>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+          
+              <svg width="32" height="32" class="rounded-circle border border-white" id="Icon_awesome-wind" data-name="Icon awesome-wind" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74.019 64.756">
+                <path id="Icon_awesome-wind-2" data-name="Icon awesome-wind" d="M22.653,34.629H2.313A2.32,2.32,0,0,0,0,36.942v4.626a2.32,2.32,0,0,0,2.313,2.313H22.87A4.829,4.829,0,0,1,27.7,47.726a4.633,4.633,0,0,1-8.963,2.241,2.284,2.284,0,0,0-2.2-1.46H11.8a2.3,2.3,0,0,0-2.3,2.66,13.879,13.879,0,0,0,27.38-4.481C36,39.689,29.693,34.629,22.653,34.629ZM2.313,30H50.886A13.881,13.881,0,1,0,37.268,13.48a2.279,2.279,0,0,0,2.284,2.645h4.742a2.27,2.27,0,0,0,2.2-1.46,4.633,4.633,0,0,1,8.963,2.241,4.817,4.817,0,0,1-4.828,3.845H2.313A2.32,2.32,0,0,0,0,23.064V27.69A2.32,2.32,0,0,0,2.313,30Zm55.512,4.626H35.23a18.273,18.273,0,0,1,5.754,9.252H57.825a6.939,6.939,0,1,1-6.014,10.351,2.393,2.393,0,0,0-2.1-1.1H44.829a2.316,2.316,0,0,0-2.212,3.05A16.172,16.172,0,1,0,57.825,34.629Z" transform="translate(0 -2.253)" fill="#fff"></path>
+              </svg>
+          
+          
+            </li>
+            <!-- <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+              <small>India</small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+              <small>4d</small>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="col" data-aos="flip-left"  data-aos-duration="1000">
+      <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+          <h2 class="pt-1 mt-1 mb-1 display-7 lh-1 fw-bold">SARAS6-RT</h2>
+          <p class="white">Aerospace
+            Simulator -6 DOF Real-Time</p>
+          <a class="css-button-rounded skpx2 skpy2" href="#" title="View details">View Details</a>
+          <ul class="d-flex list-unstyled mt-auto">
+            <li class="me-auto">
+            
+              <svg xmlns="http://www.w3.org/2000/svg"  width="32" height="32" class="rounded-circle border border-white" viewBox="0 0 74.142 74.142">
+                <g id="Icon_ionic-md-speedometer" data-name="Icon ionic-md-speedometer" transform="translate(-3.375 -3.375)">
+                  <path id="Path_106" data-name="Path 106" d="M9,29.25H54.626V37.8H9Z" transform="translate(8.633 39.712)" fill="#fff"></path>
+                  <path id="Path_107" data-name="Path 107" d="M26.579,32.282A5.7,5.7,0,1,0,25.011,21.09L13.123,12.41l-.713.624,8.715,11.888a5.563,5.563,0,0,0-.25,1.657A5.7,5.7,0,0,0,26.579,32.282Z" transform="translate(13.867 13.867)" fill="#fff"></path>
+                  <path id="Path_108" data-name="Path 108" d="M40.446,3.375A37.062,37.062,0,0,0,11.235,63.259h10.48l.713-.713,3.939-3.939-4.081-4.081-3.939,3.921A28.408,28.408,0,0,1,12.072,43.3h5.561v-5.7H12.072a28.408,28.408,0,0,1,6.274-15.149l3.939,3.921,4.081-4.081-3.921-3.939a28.408,28.408,0,0,1,15.149-6.274v5.561h5.7V12.072a28.408,28.408,0,0,1,15.149,6.274l-3.921,3.939,4.081,4.081,3.939-3.921a28.408,28.408,0,0,1,6.274,15.149H63.259v5.7h5.561a28.408,28.408,0,0,1-6.274,15.149l-3.939-3.921-4.081,4.081,3.939,3.939.713.713h10.48A37.062,37.062,0,0,0,40.446,3.375Z" fill="#fff"></path>
+                </g>
+              </svg>
+            
+            </li>
+            <!-- <li class="d-flex align-items-center me-3">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+              <small>California</small>
+            </li>
+            <li class="d-flex align-items-center">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+              <small>5d</small>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- end -->
+
+  <div class="b-example-divider" id="service"></div>
+
+  
+
     <div class="container">
-      <!--Section: Content-->
-      <section>
-        <div class="row">
+      <!-- PAGINATION -->
+    </div>
+    
+  </div>
+
+
+
+
+</main>
+
+
+
+<main class=""  data-aos="fade-up" >
+
+  <div class="container-fluid col-xxl-8 px-4 py-5removed">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <!-- <div class="col-10 col-sm-8 col-lg-6">
+        <img src="img/c2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div> -->
+      <div class="col-lg-12">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Services
+        </h1>
+        <p class="lead">
+        
+         an appropriate content may be given here
+        
+        </p>
+        <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start"> -->
+          <!-- <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 btn01">View Details</button> -->
+          <!-- <a class="css-button-rounded skpx2 skpy2" href="#" title="View details">View Details</a> -->
+          <!-- <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button> -->
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+
+<main class="container-fluid"  data-aos="fade-up">
+
+  <div class="row">
+    <div class="col-md-3">
+      <a href="#">
+      <div class="card s1">
+       
+        <div class="card-body text-start">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="ic1" viewBox="0 0 78.973 94.64">
+            <g id="Component_3_1" data-name="Component 3 – 1" transform="translate(3.506 3.51)">
+              <path id="Icon_material-lightbulb-outline" data-name="Icon material-lightbulb-outline" d="M12.8,28.18a1.329,1.329,0,0,0,1.325,1.325h5.3a1.329,1.329,0,0,0,1.325-1.325V26.855H12.8ZM16.777,3a9.273,9.273,0,0,0-5.3,16.884v3A1.329,1.329,0,0,0,12.8,24.2h7.952a1.329,1.329,0,0,0,1.325-1.325v-3A9.273,9.273,0,0,0,16.777,3Zm3.777,14.71-1.126.8v3.048h-5.3V18.506L13,17.71a6.626,6.626,0,1,1,7.554,0Z" transform="translate(9.312 16)" fill="#fff"></path>
+              <path id="Path_154" data-name="Path 154" d="M-1096.431,2360.788s-27.723-40.192,13.454-53.141,41.988,39.358,41.988,39.358l6.161,13.783-8.924,3.211-7.408,18.985-16.7-4.635v14.867h-26.316V2366.15Z" transform="translate(1105.56 -2305.586)" fill="none" stroke="#fff" stroke-width="7"></path>
+            </g>
+          </svg>
+          <br>
+          <br>
+        
+          <h2 class="text-start">Consultancy <br>Services</h2>
+          <br>
+    
+        
+          
+        </div>
+
+
+      </div>
+    </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#">
+      <div class="card s2">
+       
+        <div class="card-body text-start">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="ic1" viewBox="0 0 63.27 77.088">
+            <g id="Icon_feather-flag" data-name="Icon feather-flag" transform="translate(-2 1)">
+              <path id="Path_152" data-name="Path 152" d="M6,47.907s3.454-3.454,13.818-3.454,17.272,6.909,27.635,6.909S61.27,47.907,61.27,47.907V6.454S57.816,9.909,47.453,9.909,30.181,3,19.818,3,6,6.454,6,6.454Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></path>
+              <path id="Path_153" data-name="Path 153" d="M6,46.681V22.5" transform="translate(0 25.407)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></path>
+            </g>
+          </svg>
+          
+          <br>
+          <br>
+        
+          <h2 class="text-start">Mission 
+              <br>Design</h2>
+          <br>
+    
+        
+          
+        </div>
+
+
+      </div></a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#">
+      <div class="card s3">
+       
+        <div class="card-body text-start">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="ic1" viewBox="0 0 125 109">
+            <text id="_" data-name="</>" transform="translate(0 86)" fill="#fff" font-size="80" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="0" y="0">&lt;/&gt;</tspan></text>
+          </svg>
+          
+          <br>
+          <br>
+        
+          <h2 class="text-start">Algorithm 
+             <br>Development</h2>
+          <br>
+    
+        
+          
+        </div>
+
+
+      </div></a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="#">
+      <div class="card s4">
+       
+        <div class="card-body text-start">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+            <g id="Group_258" data-name="Group 258" transform="translate(-49 -46)">
+              <g id="Ellipse_28" data-name="Ellipse 28" transform="translate(49 46)" fill="none" stroke="#fff" stroke-width="5">
+                <circle cx="35" cy="35" r="35" stroke="none"></circle>
+                <circle cx="35" cy="35" r="32.5" fill="none"></circle>
+              </g>
+              <g id="Group_257" data-name="Group 257" transform="translate(1 -0.193)">
+                <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M19.112,28.995,36.371,11.749a3.26,3.26,0,0,0-4.617-4.6L12.2,26.686a3.253,3.253,0,0,0-.1,4.495L31.74,50.857a3.26,3.26,0,0,0,4.617-4.6Z" transform="translate(58.75 51.999)" fill="#fff"></path>
+                <path id="Icon_ionic-ios-arrow-back-2" data-name="Icon ionic-ios-arrow-back" d="M29.467,28.995,12.208,11.749a3.26,3.26,0,0,1,4.617-4.6l19.554,19.54a3.253,3.253,0,0,1,.1,4.495L16.838,50.857a3.26,3.26,0,0,1-4.617-4.6Z" transform="translate(58.75 51.999)" fill="#fff"></path>
+              </g>
+            </g>
+          </svg>
+          
+          
+          
+          
+          <br>
+          <br>
+        
+          <h2 class="text-start">Algorithm 
+             <br>Validation</h2>
+          <br>
+    
+        
+          
+        </div>
+
+
+      </div></a>
+    </div>
+
+  
+  </div>
+  <br/>
+</main>
+
+
+  <div class="b-example-divider-0"></div>
+</main>
+<main id="contact">
+
+  <div class="container px-4 py-5" id="featured-3"  data-aos="fade-up">
+    <h2 class="pb-2 border-bottom">Contact Us</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="feature col">
+        <div class="feature-icon bg-secondary  bg-gradient">
          
 
-          <div class="col-md-6 gx-5 mb-4">
-            <h4><span class="sub1">Software based</span><br/>
-              <span class="sub2">Simulation</span>
-            </h4>
-            <p class="text-muted">
-              Software based simulation plays a major role in the aerospace industry like finalising the configuration, design missions, validation of NGC (Navigation, Guidance and Control) algorithms, validation of hardware compatibility, range safety, etc.  Simulation provides the cost effective and time efficient integrated testing of hardware and algorithms.  In addition, simulations provide a platform to understand individual subsystems and its interfaces. 
-            </p>  
-          </div>
-
-          <div class="col-md-6 gx-5 mb-4">
-            <div class="bg-image hover-overlay ripple " data-mdb-ripple-color="light">
-              <img src="img/c2.png" class="img-fluid" />
-              <a href="#!">
-                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-              </a>
-            </div>
-          </div>
-
+          <svg xmlns="http://www.w3.org/2000/svg" idth="1em" height="1em" fill="#fff" class="bi bi-map" viewBox="0 0 16 16">
+            <path fill="#fff" fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
+          </svg>
 
         </div>
-      </section>
-    
 
-    </div>
-
-
-    <div class="container-fluid bgx2">
-     
-      <div class="container">
-      <!--Section: Content-->
-      <section class="text-center ">
-        <h4 class="mb-5 padt50"><strong>Products</strong></h4>
-        <p>For a sector where perfection and precision are the primary needs, Spacelabs Products are designed with cutting edge technology. Simple design, user friendly features and quality outputs. This makes our products distinct and unique in the market. Precision and Perfection are taken care in every stage of the product evolution stage. Our products cater to Launch Vehicles, Satellites, Missiles, UAV and Aircrafts.
-          The Space Labs is committed to provide an ERP based solution for data handling from initiation of mission to launch and post flight analysis for launch vehicles/satellites.
-          </p>
-
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card p1">
-             
-              <div class="card-body">
-                <div class="container">
-                  <div class="row">
-
-                    <div class="col-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="69.513" height="69.513" viewBox="0 0 69.513 69.513">
-                        <path id="Icon_metro-rocket" data-name="Icon metro-rocket" d="M50.361,6.273,28.638,28H15.6L2.571,45.374s13.809-3.846,21.863-2.042L2.571,71.441l28.64-22.276c3.994,9.141-2.573,22.276-2.573,22.276L46.016,58.407V45.374L67.739,23.651,72.084,1.928,50.361,6.273Z" transform="translate(-2.571 -1.928)" fill="#ff8383"/>
-                      </svg>
-                      
-                    </div>
-                    <div class="col-8">
-                      <div class="text-start prod_title1">ASTRA</div>
-                      <div class="text-start">AeroSpace  <br/>TRAjectory 
-                        optimizer</div>
-                        <div class="text-start">
-                      <a href="#"  class="more">Read more <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-
-
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card p2">
-             
-              
-              <div class="card-body">
-                <div class="container">
-                  <div class="row">
-
-                    <div class="col-4">
-                      <svg id="Icon_awesome-wind" data-name="Icon awesome-wind" xmlns="http://www.w3.org/2000/svg" width="74.019" height="64.756" viewBox="0 0 74.019 64.756">
-                        <path id="Icon_awesome-wind-2" data-name="Icon awesome-wind" d="M22.653,34.629H2.313A2.32,2.32,0,0,0,0,36.942v4.626a2.32,2.32,0,0,0,2.313,2.313H22.87A4.829,4.829,0,0,1,27.7,47.726a4.633,4.633,0,0,1-8.963,2.241,2.284,2.284,0,0,0-2.2-1.46H11.8a2.3,2.3,0,0,0-2.3,2.66,13.879,13.879,0,0,0,27.38-4.481C36,39.689,29.693,34.629,22.653,34.629ZM2.313,30H50.886A13.881,13.881,0,1,0,37.268,13.48a2.279,2.279,0,0,0,2.284,2.645h4.742a2.27,2.27,0,0,0,2.2-1.46,4.633,4.633,0,0,1,8.963,2.241,4.817,4.817,0,0,1-4.828,3.845H2.313A2.32,2.32,0,0,0,0,23.064V27.69A2.32,2.32,0,0,0,2.313,30Zm55.512,4.626H35.23a18.273,18.273,0,0,1,5.754,9.252H57.825a6.939,6.939,0,1,1-6.014,10.351,2.393,2.393,0,0,0-2.1-1.1H44.829a2.316,2.316,0,0,0-2.212,3.05A16.172,16.172,0,1,0,57.825,34.629Z" transform="translate(0 -2.253)" fill="#147cd5"/>
-                      </svg>
-                      
-                      
-                    </div>
-                    <div class="col-8">
-                      <div class="text-start prod_title2">SARAS6</div>
-                      <div class="text-start">Aerospace <br/>
-                        Simulator  -6 DOF</div>
-                        <div class="text-start">
-                      <a href="#"  class="more">Read more  <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-
-
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="card p3">
-             
-              <div class="card-body">
-                <div class="container">
-                  <div class="row">
-
-                    <div class="col-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="74.142" height="74.142" viewBox="0 0 74.142 74.142">
-                        <g id="Icon_ionic-md-speedometer" data-name="Icon ionic-md-speedometer" transform="translate(-3.375 -3.375)">
-                          <path id="Path_106" data-name="Path 106" d="M9,29.25H54.626V37.8H9Z" transform="translate(8.633 39.712)" fill="#3727f5"/>
-                          <path id="Path_107" data-name="Path 107" d="M26.579,32.282A5.7,5.7,0,1,0,25.011,21.09L13.123,12.41l-.713.624,8.715,11.888a5.563,5.563,0,0,0-.25,1.657A5.7,5.7,0,0,0,26.579,32.282Z" transform="translate(13.867 13.867)" fill="#3727f5"/>
-                          <path id="Path_108" data-name="Path 108" d="M40.446,3.375A37.062,37.062,0,0,0,11.235,63.259h10.48l.713-.713,3.939-3.939-4.081-4.081-3.939,3.921A28.408,28.408,0,0,1,12.072,43.3h5.561v-5.7H12.072a28.408,28.408,0,0,1,6.274-15.149l3.939,3.921,4.081-4.081-3.921-3.939a28.408,28.408,0,0,1,15.149-6.274v5.561h5.7V12.072a28.408,28.408,0,0,1,15.149,6.274l-3.921,3.939,4.081,4.081,3.939-3.921a28.408,28.408,0,0,1,6.274,15.149H63.259v5.7h5.561a28.408,28.408,0,0,1-6.274,15.149l-3.939-3.921-4.081,4.081,3.939,3.939.713.713h10.48A37.062,37.062,0,0,0,40.446,3.375Z" fill="#3727f5"/>
-                        </g>
-                      </svg>
-                      
-                      
-                    </div>
-                    <div class="col-8">
-                      <div class="text-start prod_title3">SARAS6-RT</div>
-                      <div class="text-start">Aerospace  <br/>
-                        Simulator -6 DOF Real-Time</div>
-                        <div class="text-start">
-                      <a href="#" class="more">Read more  <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-      <!--Section: Content-->
-      </div>
-    </div>
-
-
-    <div class="container-fluid bgx3">
-     
-      <div class="container">
-      <!--Section: Content-->
-      <section class="text-center ">
-        <h4 class="padt100 white"><strong>Services</strong></h4>
-        <!-- <p>For a sector where perfection and precision are the primary needs, Spacelabs Products are designed with cutting edge technology. Simple design, user friendly features and quality outputs. This makes our products distinct and unique in the market. Precision and Perfection are taken care in every stage of the product evolution stage. Our products cater to Launch Vehicles, Satellites, Missiles, UAV and Aircrafts.
-          The Space Labs is committed to provide an ERP based solution for data handling from initiation of mission to launch and post flight analysis for launch vehicles/satellites.
-          </p> -->
-
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card s1">
-             
-              <div class="card-body text-start">
-
-                <svg xmlns="http://www.w3.org/2000/svg" class="ic1" viewBox="0 0 78.973 94.64">
-                  <g id="Component_3_1" data-name="Component 3 – 1" transform="translate(3.506 3.51)">
-                    <path id="Icon_material-lightbulb-outline" data-name="Icon material-lightbulb-outline" d="M12.8,28.18a1.329,1.329,0,0,0,1.325,1.325h5.3a1.329,1.329,0,0,0,1.325-1.325V26.855H12.8ZM16.777,3a9.273,9.273,0,0,0-5.3,16.884v3A1.329,1.329,0,0,0,12.8,24.2h7.952a1.329,1.329,0,0,0,1.325-1.325v-3A9.273,9.273,0,0,0,16.777,3Zm3.777,14.71-1.126.8v3.048h-5.3V18.506L13,17.71a6.626,6.626,0,1,1,7.554,0Z" transform="translate(9.312 16)" fill="#fff"/>
-                    <path id="Path_154" data-name="Path 154" d="M-1096.431,2360.788s-27.723-40.192,13.454-53.141,41.988,39.358,41.988,39.358l6.161,13.783-8.924,3.211-7.408,18.985-16.7-4.635v14.867h-26.316V2366.15Z" transform="translate(1105.56 -2305.586)" fill="none" stroke="#fff" stroke-width="7"/>
-                  </g>
-                </svg>
-                <br/>
-                <br/>
-              
-                <h2 class="text-start">Consultancy <br/>Services</h2>
-                <br/>
-          
-              
-                
-              </div>
-
-
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card s2">
-             
-              <div class="card-body text-start">
-
-                <svg xmlns="http://www.w3.org/2000/svg" class="ic1" viewBox="0 0 63.27 77.088">
-                  <g id="Icon_feather-flag" data-name="Icon feather-flag" transform="translate(-2 1)">
-                    <path id="Path_152" data-name="Path 152" d="M6,47.907s3.454-3.454,13.818-3.454,17.272,6.909,27.635,6.909S61.27,47.907,61.27,47.907V6.454S57.816,9.909,47.453,9.909,30.181,3,19.818,3,6,6.454,6,6.454Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-                    <path id="Path_153" data-name="Path 153" d="M6,46.681V22.5" transform="translate(0 25.407)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
-                  </g>
-                </svg>
-                
-                <br/>
-                <br/>
-              
-                <h2 class="text-start">Mission 
-                    <br/>Design</h2>
-                <br/>
-          
-              
-                
-              </div>
-
-
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card s3">
-             
-              <div class="card-body text-start">
-
-                <svg xmlns="http://www.w3.org/2000/svg" class="ic1" viewBox="0 0 125 109">
-                  <text id="_" data-name="&lt;/&gt;" transform="translate(0 86)" fill="#fff" font-size="80" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="0" y="0">&lt;/&gt;</tspan></text>
-                </svg>
-                
-                <br/>
-                <br/>
-              
-                <h2 class="text-start">Algorithm 
-                   <br/>Development</h2>
-                <br/>
-          
-              
-                
-              </div>
-
-
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="card s4">
-             
-              <div class="card-body text-start">
-
-                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
-                  <g id="Group_258" data-name="Group 258" transform="translate(-49 -46)">
-                    <g id="Ellipse_28" data-name="Ellipse 28" transform="translate(49 46)" fill="none" stroke="#fff" stroke-width="5">
-                      <circle cx="35" cy="35" r="35" stroke="none"/>
-                      <circle cx="35" cy="35" r="32.5" fill="none"/>
-                    </g>
-                    <g id="Group_257" data-name="Group 257" transform="translate(1 -0.193)">
-                      <path id="Icon_ionic-ios-arrow-back" data-name="Icon ionic-ios-arrow-back" d="M19.112,28.995,36.371,11.749a3.26,3.26,0,0,0-4.617-4.6L12.2,26.686a3.253,3.253,0,0,0-.1,4.495L31.74,50.857a3.26,3.26,0,0,0,4.617-4.6Z" transform="translate(58.75 51.999)" fill="#fff"/>
-                      <path id="Icon_ionic-ios-arrow-back-2" data-name="Icon ionic-ios-arrow-back" d="M29.467,28.995,12.208,11.749a3.26,3.26,0,0,1,4.617-4.6l19.554,19.54a3.253,3.253,0,0,1,.1,4.495L16.838,50.857a3.26,3.26,0,0,1-4.617-4.6Z" transform="translate(58.75 51.999)" fill="#fff"/>
-                    </g>
-                  </g>
-                </svg>
-                
-                
-                
-                
-                <br/>
-                <br/>
-              
-                <h2 class="text-start">Algorithm 
-                   <br/>Validation</h2>
-                <br/>
-          
-              
-                
-              </div>
-
-
-            </div>
-          </div>
 
         
+
+
+        <h2>TheSpaceLabs</h2>
+        <p>Smarana, TC 3/2105,
+          Arasummoodu, Kulathur,
+          Trivandrum, India.</p>
+        <a href="#" class="icon-link">
+          Map View
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <!-- <div class="feature col">
+        <div class="feature-icon bg-primary bg-gradient">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
         </div>
-      </section>
-      <!--Section: Content-->
+        <h2>Featured title</h2>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          Call to action
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div>
+      <div class="feature col">
+        <div class="feature-icon bg-primary bg-gradient">
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+        </div>
+        <h2>Featured title</h2>
+        <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <a href="#" class="icon-link">
+          Call to action
+          <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div> -->
+    </div>
+  </div>
+
+</main>
+<footer>
+
+  <div class="bg-dark text-secondary px-4 py-5 text-center">
+    <div class="py-5">
+      <h1 class="display-5 fw-bold text-white">The SpaceLabs</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-5 mb-4"> © 2021 Copyright The SpaceLabs</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <!-- <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
+          <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button> -->
+        </div>
       </div>
     </div>
+  </div>
 
-  </main>
-  <!--Main layout-->
-
-  <main class="contactbg">
-    <div class="container">
-      <!--Section: Content-->
-          <section class="padt100">
-            
-           <div class="row ">
-           
-            <div class="col-md-6">
-              <h4 ><strong>Contact Us</strong></h4>
-              THESPACELABS<br/>
-            Smarana, TC 3/2105, <br/>
-            Arasummoodu, Kulathur, <br/>
-            Trivandrum, India. <br/>
+</footer>
 
 
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/aos/aos.js"></script>
 
-              </div>
-
-              <div class="col-md-6">
-                <h4 ><strong>Connect with Us</strong></h4>
-                Mobile: 9876789
-              </div>
-
-           
-          </div>
-          </section>
-     </div>
-  </main>
-  
-
-  
-
-  <!--Footer-->
-  <footer class="bg-light text-lg-start">
-  
-
-    <hr class="m-0" />
-
-    <div class="text-center py-4 align-items-center">
-      <p>Follow us on social media</p>
-      <a href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" class=" m-1" role="button"
-        rel="nofollow" target="_blank">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a href="https://www.facebook.com/" class=" m-1" role="button" rel="nofollow"
-        target="_blank">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://twitter.com/" class="m-1" role="button" rel="nofollow"
-        target="_blank">
-        <i class="fab fa-twitter"></i>
-      </a>
-      
-    </div> 
-
-    <!-- Copyright -->
-    <div class="ftbg" >
-      <div class="container">
-        <div class="col-md-6 white smallfont">
-
-          <br/>
-          <br/>
-        © 2021 Copyright The SpaceLabs
-      </div>
-
-      <div class="col-md-6">
-
-      </div>
-    
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!--Footer-->
-    <!-- MDB -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript" src="js/script.js"></script>
-</body>
+    <script>
+      AOS.init();
+</script>
+  </body>
 </html>
