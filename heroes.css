@@ -444,3 +444,22 @@ a
   -ms-transition: all 1s ease;
   transition: all 1s ease;
 }
+
+
+
+@media (max-width: 800px) {
+  .cmargin {
+     margin-top: 10px !important;
+  }
+}
+
+.hero1
+{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hero1sub
+{
+  font-size: 25px;
+}
