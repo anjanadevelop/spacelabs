@@ -116,8 +116,8 @@ html {
 ------------------------------------------- */
 
 .css-button-rounded {
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid rgb(77, 62, 143);
+  color: rgb(119, 84, 84);
   display: block;
   padding: 3px 3px;
   width: 150px;
@@ -462,4 +462,13 @@ a
 .hero1sub
 {
   font-size: 25px;
+}
+
+.white-text
+{
+  color: white !important;
+}
+
+.bg-dark2 {
+  background-color: #892778!important;
 }
