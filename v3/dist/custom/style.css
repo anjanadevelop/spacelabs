@@ -896,23 +896,34 @@ p.white
 
 /* //////////
  */
+ .bgblack
+ {
+   background: #000000;
+   background-image: linear-gradient(to right, #434343 0%, black 100%);
+   color: #fff;
+   padding-top: 50px;
+ }
  .s1
 {
-    background: #9C61D6;
+    background: #614c75;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
     
 }
 
 .s2
 {
     background: #6877EB;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
 .s3
 {
     background: #226FA0;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
 }
 .s4
 {
     background: #3F7EF5;
+    background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
 }
 .s1 h2,.s2 h2,.s3 h2,.s4 h2
 {
@@ -1018,5 +1029,11 @@ a
 
 h1.white
 {
-  color: rgb(34, 88, 195);
+  color: rgb(96 145 241);
+
+}
+
+.wtext
+{
+  color: white !important;
 }
