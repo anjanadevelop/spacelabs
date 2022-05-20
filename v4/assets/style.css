@@ -96,7 +96,8 @@ a{
 
 .logogok
 {
-    height: 100px;
+    /* height: 100px; */
+    width: min(50vw, 300px);
 }
 
 .header_lb
