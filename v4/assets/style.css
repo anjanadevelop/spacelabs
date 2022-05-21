@@ -74,7 +74,7 @@ html, body {
 }
 
 body{
-    background: url(../assets/images/bg2.jpg) no-repeat fixed;
+    background: url(../assets/images/bg.jpg) no-repeat fixed;
     background-size: cover;
 }
 
@@ -478,3 +478,20 @@ a{
     border-radius: 2px;
     background: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
   }
+
+
+  .c-link-dark{
+    border: none;
+    
+    padding: 12px 10px 12px 0px;
+    border-radius: 100px;
+    color: rgb(64, 64, 64);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23000'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0px center;
+    
+  }
+  .c-link-dark:hover{
+    color: rgb(81, 92, 213);
+
+}
