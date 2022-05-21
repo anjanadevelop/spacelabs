@@ -495,3 +495,34 @@ a{
     color: rgb(81, 92, 213);
 
 }
+
+
+
+
+
+
+/* new css a4dee6*/
+
+.border1p
+{
+   /* border-bottom: #ccd0d0 3px solid; */
+  
+}
+
+.bread
+{
+    background: #f6f6f6;
+    border-bottom: #ccd0d0 1px solid;
+    border-top: #ccd0d0 1px solid;
+}
+
+.breadcrumb
+{
+    height: 40px;
+    line-height: 50px;
+}
+.breadcrumb-item a{
+
+font-weight: 700;
+
+}
