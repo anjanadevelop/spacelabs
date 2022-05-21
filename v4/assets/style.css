@@ -69,7 +69,7 @@
 html, body {
     font-size: 15px;
     background: var(--header-bg);
-    font-family: 'Baloo Chettan 2', cursive;
+    font-family: 'Baloo Chettan 2';
     font-weight: 400;
 }
 
