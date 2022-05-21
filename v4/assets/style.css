@@ -74,7 +74,7 @@ html, body {
 }
 
 body{
-    background: url(../assets/images/bg3.png) no-repeat fixed;
+    background: url(../assets/images/bg2.jpg) no-repeat fixed;
     background-size: cover;
 }
 
@@ -97,7 +97,7 @@ a{
 .logogok
 {
     /* height: 100px; */
-    width: min(90vw, 300px);
+    width: min(100vw, 300px);
 }
 
 .header_lb
@@ -413,7 +413,7 @@ a{
 
 .darbbg2
 {
-    background: #595858;
+    background: #232222;
     color: white;
 }
 
@@ -431,3 +431,50 @@ a{
 {
     color: #7362f1;
 }
+
+.links
+{
+    color: rgb(225, 225, 225);
+}
+.links:hover
+{
+    color: rgb(255, 255, 255);
+}
+
+.navbar-toggler
+{
+    outline: none;
+    box-shadow: none;
+    border: 0 none;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.border_bottom
+{
+
+    /* border-bottom:4px solid;
+    border-image: linear-gradient(to right, rgba(52, 183, 244, 0.253), rgba(0, 128, 119, 0.382)) 1;  */
+  
+}
+
+
+.border_bottom {
+    position: relative;
+  }
+
+
+  .border_bottom::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    height: 5px;
+    border-radius: 2px;
+    background: linear-gradient(111.3deg, #9c27b0 9.6%, #00bcd4 93.6%);
+  }
