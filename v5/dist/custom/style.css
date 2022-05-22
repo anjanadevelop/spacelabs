@@ -727,7 +727,7 @@ p {
 .centered {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 45%; /*50*/
   transform: translate(-50%, -50%);
 }
 .edate
@@ -925,6 +925,11 @@ a
 .bgtrans
 {
   background: rgba(254, 0, 0, 0) !important;
+}
+
+.bgtransx
+{
+  background: red !important;
 }
 
 
