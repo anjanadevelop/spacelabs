@@ -1030,6 +1030,37 @@ font-weight: 700;
   border-radius: 15px;
 
 }
+.coversatra1
+
+{
+  background-image: url(../../img/imx5.jpg);
+  background-size: cover;
+  height: 300px;
+  background-position: top 50px;
+  border-radius: 15px;
+}
+
+.coversars1
+{
+
+  background-image: url(../../img/imx1.jpg);
+  background-size: cover;
+  height: 300px;
+  background-position: top 50px;
+  border-radius: 15px;
+
+}
+
+.coversarsrt
+{
+
+  background-image: url(../../img/unsplash-photo-3.jpg);
+  background-size: cover;
+  height: 300px;
+  background-position: top 50px;
+  border-radius: 15px;
+
+}
 
 .subaddress
 {
@@ -1128,6 +1159,17 @@ font-weight: bold;
 margin-top:1em;
 }
 
+
+
+@media (max-width: 800px) {
+  .blockquote p {
+  font-size: 25px;
+
+}
+
+
+
+}
 
 
 a {
