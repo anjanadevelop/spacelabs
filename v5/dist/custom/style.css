@@ -940,7 +940,7 @@ a
 
 h1.white
 {
-  color: rgb(96 145 241);
+  color: rgb(255 190 90);/*rgb(96 145 241);*/
 
 }
 
@@ -1235,4 +1235,10 @@ a {
   100% {
     transform: rotate(360deg);
   }
+}
+
+
+.ashbg2
+{
+  background: #240358;
 }
