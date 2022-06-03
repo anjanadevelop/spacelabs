@@ -810,7 +810,15 @@ p.white
     background: #3F7EF5;
     background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%);
 }
-.s1 h2,.s2 h2,.s3 h2,.s4 h2
+
+
+.s5
+{
+    background: #3F7EF5;
+    background-image: linear-gradient(to top, #736263 0%, #453a94 100%);
+}
+
+.s1 h2,.s2 h2,.s3 h2,.s4 h2, .s5 h2
 {
     border-left: 3px solid rgb(255, 255, 255);
     padding-left: 5px;
@@ -839,8 +847,14 @@ p.white
 
 }
 
+.s5 h2
+{
+    border-left: 3px solid #91bcd5;
 
-.s1,.s2,.s3,.s4
+}
+
+
+.s1,.s2,.s3,.s4,.s5
 {
     min-height: 250px;
 }
