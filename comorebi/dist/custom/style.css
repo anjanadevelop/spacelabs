@@ -337,8 +337,8 @@ background-color: rgb(46 34 34 / 90%) !important;
 .bgw
 {
   padding-top: 15px !important;
-background-color: rgb(255, 255, 255) !important;
-color: #333 !important;
+background-color: rgba(4, 4, 4, 0.667) !important;
+color: rgb(255, 255, 255) !important;
 }
 
 #cursive
