@@ -161,32 +161,32 @@ html {
 @keyframes chbg {
   0% {
     background-position: 0% 50%;
-    background:url(images/im1.jpg);
+    background:url(images/d1.png);
   background-size:cover
   }
   20% {
     background-position: 20% 50%;
-    background:url(images/im2.jpg);
+    background:url(images/d2.png);
   background-size:cover
   }
   40% {
     background-position: 40% 50%;
-    background:url(images/im3.jpg);
+    background:url(images/d4.png);
   background-size:cover
   }
   60% {
     background-position: 60% 50%;
-    background:url(images/im4.jpg);
+    background:url(images/d4.png);
   background-size:cover
   }
   80% {
     background-position: 80% 50%;
-    background:url(images/im1.jpg);
+    background:url(images/d2.png);
   background-size:cover
   }
   100% {
     background-position: 100% 50%;
-    background:url(images/im1.jpg);
+    background:url(images/d1.png);
   background-size:cover
   }
 }
@@ -330,7 +330,7 @@ border-bottom-color: #fff;
 .bg-dark_skm
 {
 
-background-color: rgb(46 34 34 / 90%) !important;
+background-color: rgba(0, 0, 0, 0.94) !important;
 
 }
 
@@ -347,3 +347,7 @@ font-family: 'Petit Formal Script', cursive !important;
 }
 
 
+.borderu
+{
+  border-radius: 50px !important;
+}
