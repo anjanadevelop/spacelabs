@@ -396,3 +396,32 @@ color: rgba(190, 190, 190, 100) !important;
   text-shadow: .1em .1em 0 hsl(200 50% 30%);
   color: #fff !important;
 }
+
+.dark-overlay
+{
+  min-height: 300px;
+}
+.h300
+{
+  min-height: 300px;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.dark-overlay:after {
+  content:"";
+  display:block;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0, 0, 0, 0.558);
+}
+
+
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
