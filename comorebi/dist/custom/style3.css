@@ -271,7 +271,7 @@
 
 .bi {
   vertical-align: -.125em;
-  fill: currentColor;
+  fill: #3f3f3f;
 }
 
 .nav-scroller {
@@ -378,7 +378,8 @@ font-family: 'Petit Formal Script', cursive !important;
 
 .ftextc
 {
-color: rgba(190, 190, 190, 100) !important;
+color: #353535 !important;
+font-size: 13px !important;
 
 }
 
@@ -393,7 +394,7 @@ color: rgba(190, 190, 190, 100) !important;
 .sbox
 {
   /* background: rgba(13, 13, 13, 0.697); */
-  text-shadow: .1em .1em 0 hsl(200 50% 30%);
+  text-shadow: .1em .1em .1em rgb(0, 0, 0);
   color: #fff !important;
 }
 
