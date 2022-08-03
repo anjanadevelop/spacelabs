@@ -662,3 +662,13 @@ font-size: 13px !important;
 {
   padding: 15px 0px 5px 0px !important;
 }
+
+.card-body_p
+{
+  padding: 15px 15px 15px 15px !important;
+}
+
+.xbn
+{
+  color: #004E64 !important;
+}
