@@ -475,7 +475,9 @@ Picked
     </div>
   </nav>
 </div>
-
+<div id="scrolltop" style="visibility: visible; opacity: 1;">
+  <a class="top-button" href="#top">↑</a>
+</div>
   <script src="dist/js/bootstrap.bundle.min.js"></script>
   <script src="dist/js/aos.js"></script>
   <!-- <script src="dist/custom/cs.js"></script> -->
@@ -502,6 +504,16 @@ Picked
   <script>
     
     AOS.init();
+    const scrollTop = document.getElementById('scrolltop')
+window.onscroll = () => {
+  if (window.scrollY > 0) {
+    scrollTop.style.visibility = "visible";
+    scrollTop.style.opacity = 1;
+  } else {
+    scrollTop.style.visibility = "hidden";
+    scrollTop.style.opacity = 0;
+  }
+};
 
 
   </script>

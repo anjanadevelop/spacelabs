@@ -566,3 +566,27 @@ font-size: 13px !important;
   height: 250px;
 }
 
+
+
+#scrolltop {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s ease-in;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+
+
+.top-button {
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.5;
+  cursor: pointer;
+  padding: 12px;
+  color: #222;
+}
